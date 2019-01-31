@@ -48,4 +48,4 @@ if (message.content.startsWith(adminprefix + 'stavatar')) {
 
 
 
-client.login(process.env.TOKEN);
+client.login(process.env.BOT_TOKEN);
