@@ -1,11 +1,10 @@
-const settings = require("./config.json"); 
 const Discord = require('discord.js');
 const initcmd = settings.initcmd;
 const id = settings.id;
 const client = new Discord.Client();
 
 client.on('ready', () => {
-  console.log(`Hi ${client.user.tag} , This Code by : Kahrbaa `);
+  console.log(`Hi ${client.user.tag} , This Code by : Speedy `);
   console.log('')
   console.log(`i Have  [ " ${client.guilds.size} " ]`);
 });
@@ -32,7 +31,7 @@ client.on('message', message => {
    + `${argresult}` + "``**")
   } else 
   if (message.content.startsWith(adminprefix + 'st')) {
-    client.user.setGame(argresult, "https://www.twitch.tv/i_kahrba999");
+    client.user.setGame(argresult, "https://www.twitch.tv/7eezi");
       message.channel.send("**:white_check_mark: | The Streaming Status Has Been Changed To : ``"
    + `${argresult}` + "``**")
   }
@@ -49,4 +48,4 @@ if (message.content.startsWith(adminprefix + 'stavatar')) {
 
 
 
-client.login(process.env.BOT_TOKEN);
+client.login(process.env.TOKEN);
